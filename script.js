@@ -1,4 +1,6 @@
 
+    const li = document.createElement("li");
+    let inputValue = document.querySelector(".input").value;
     const t = document.createTextNode(inputValue);
     li.appendChild(t);
 
