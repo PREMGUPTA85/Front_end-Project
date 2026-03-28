@@ -231,3 +231,21 @@ header {
     text-align: end;
     padding: 15px;
 }
+
+.items-container {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.item-container {
+    width: 200px;
+
+}
+
+.item-image{
+
+}
+
+.rating {
+
+}
