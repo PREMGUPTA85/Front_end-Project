@@ -250,3 +250,24 @@ header {
     font-size: 12px;
     font-weight: 700;
 }
+
+.company-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+    white-space: nowrap;
+}
+
+.item-name {
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    
+}
