@@ -291,6 +291,11 @@ header {
 }
 .Original_price{
     text-decoration: line-through;
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
 }
 .discount {
     color: #ff905a;
