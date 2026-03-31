@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>To-Do List App | 100 JavaScript Projects.</title>
-        <!-- CSS Link -->
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -15,14 +14,55 @@
                 <button id="button">Add</button>
             </div>
             <ul id="todo_list">
-                <!-- <li>Hello</li> -->
-                 <!-- <li>Task 1 <button>Remove</button></li> -->
+
             </ul>
         </div>
 
-        <!-- add a remove button in each list item -->
-        
-        <!-- JavaScript Include -->
         <script src="script.js"></script>
     </body>
+</html> -->
+
+<!-- // class method -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 8px 0;
+    }
+    .deletebtn {
+      margin-left: 10px;
+      color: white;
+      background: red;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Form -->
+  <form id="fi">
+    <input 
+      type="text" 
+      id="addtask" 
+      placeholder="Enter a task"
+    />
+    <button type="submit">Add Task</button>
+  </form>
+
+  <!-- Task List -->
+  <ul id="tasklist"></ul>
+
+  <script src="script.js"></script>
+</body>
 </html>
