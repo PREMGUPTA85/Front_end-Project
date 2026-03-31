@@ -18,4 +18,17 @@ function addTodo() {
     document.querySelector("input").value = "";
 }
 
+// add a remove button in each list item
+function addRemoveButton(li) {
+    const removeButton = document.createElement("button");
+    removeButton.textContent = "Remove";
+    removeButton.addEventListener("click", function() {
+        todoList.removeChild(li);
+    });
+    li.appendChild(removeButton);
+}
+//it's html code is 
+
+
+
 buttonEl.addEventListener("click", addTodo);
