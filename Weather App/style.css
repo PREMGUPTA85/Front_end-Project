@@ -8,4 +8,28 @@
     /* vh --> view height */
     height: 100vh; 
     background-color: maroon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather_container{
+    color: white;
+}
+
+.temp{
+    font-size: 4.5rem;
+}
+
+.time_location{
+    font-size: 2rem;
+}
+
+.condition{
+    margin: 0.5rem;
+    margin-left: 0.2rem;
+}
+
+nav{
+    height: 50px;
 }
