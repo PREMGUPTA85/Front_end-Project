@@ -29,6 +29,8 @@ const fetchResults = async (targetLocation) => {
 }
 
 function updateDetails(temp, locationName, time, condition){
+    
+
     temperatureField.innerText = temp;
     locationField.innerText = locationName;
     dateandTimeField.innerText = time;
