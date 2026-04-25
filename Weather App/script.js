@@ -23,7 +23,8 @@ const fetchResults = async (targetLocation) => {
     const temp = data.current.temp_c;
 
     let condition = data.current.condition.text;
-
 }
+
+
 
 fetchResults(target)
