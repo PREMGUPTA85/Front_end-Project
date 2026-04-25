@@ -7,7 +7,7 @@
     width: 100%;
     /* vh --> view height */
     height: 100vh; 
-    background-color: maroon;
+    background-color: skyblue;
     display: flex;
     justify-content: center;
     align-items: center;
