@@ -1,12 +1,22 @@
 //http://api.weatherapi.com/v1/current.json?key=cd1898a995604cc6aa791727262504&q=Mumbai&aqi=no
  
-const fetchResults = async () => {
-    let url = `http://api.weatherapi.com/v1/current.json?key=cd1898a995604cc6aa791727262504&q=Mumbai&aqi=no
-`
-    const res = await fetch(url)
+let target = 'Lucknow';
 
-    console.log(res)
+
+const fetchResults = async (targetLocation) => {
+    let url = `http://api.weatherapi.com/v1/current.json?key=cd1898a995604cc6aa791727262504&q=${targetLocation}&aqi=no
+`
+    const res = await fetch(url);
+    const data = await res.json();
+
+    // console.log(res);
+    console.log(data);
+
+    const time = data.location.localtime;
+    const temp = data.current.temp_c;
+
+    let condition = data.current.condition.text;
 
 }
 
-fetchResults()
+fetchResults(target)
