@@ -1,21 +1,11 @@
 //http://api.weatherapi.com/v1/current.json?key=cd1898a995604cc6aa791727262504&q=Mumbai&aqi=no
- 
-
 
 const temperatureField = document.querySelector(".temp");
 const locationField = document.querySelector(".time_location p");
-
-
-
-
-
-
-
-
-
-
-
-
+const dateField = document.querySelector(".time_location span");
+const weatherField = document.querySelector(".condition p");
+const searchField = document.querySelector("search_area");
+const form = document.querySelector("form");
 
 let target = 'Lucknow';
 
