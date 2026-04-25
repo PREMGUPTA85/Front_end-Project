@@ -2,8 +2,8 @@
 
 const temperatureField = document.querySelector(".temp");
 const locationField = document.querySelector(".time_location p");
-const dateField = document.querySelector(".time_location span");
-const weatherField = document.querySelector(".condition p");
+const dateandTimeField = document.querySelector(".time_location span");
+const conditionField = document.querySelector(".condition p");
 const searchField = document.querySelector(".search_area");
 const form = document.querySelector("form");
 
@@ -20,11 +20,21 @@ const fetchResults = async (targetLocation) => {
     // console.log(res);
     console.log(data);
 
+    let locationName = data.location.name;
     const time = data.location.localtime;
     const temp = data.current.temp_c;
 
     let condition = data.current.condition.text;
+    updateDetails(temp, locationName, time, condition);
 }
+
+function updateDetails(temp, locationName, time, condition){
+    temperatureField.innerText = temp;
+    locationField.innerText = locationName;
+    dateandTimeField.innerText = time;
+    conditionField.innerText = condition;
+}
+
 
 function searchForLocation(e){
     e.preventDefault() // page reload hone se rok dega
