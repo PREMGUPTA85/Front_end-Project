@@ -9,6 +9,7 @@ const form = document.querySelector("form");
 
 let target = 'Lucknow';
 
+form.addEventListener('submit', searchForLocation)
 
 const fetchResults = async (targetLocation) => {
     let url = `http://api.weatherapi.com/v1/current.json?key=cd1898a995604cc6aa791727262504&q=${targetLocation}&aqi=no
@@ -25,6 +26,12 @@ const fetchResults = async (targetLocation) => {
     let condition = data.current.condition.text;
 }
 
+function searchForLocation(e){
+    e.preventDefault() // page reload hone se rok dega
 
+    target = searchField.value
+
+    fetchResults(target);
+}
 
 fetchResults(target)
