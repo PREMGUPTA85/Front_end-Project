@@ -36,9 +36,10 @@ function updateDetails(temp, locationName, time, condition){
     let currentDay = getDayName(new Date(splitDate).getDay());
 
 
+
     temperatureField.innerText = temp;
     locationField.innerText = locationName;
-    dateandTimeField.innerText = time;
+    dateandTimeField.innerText = `${splitDate} ${currentDay} ${splitTime}`;
     conditionField.innerText = condition;
 }
 
