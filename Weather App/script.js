@@ -4,7 +4,7 @@ const temperatureField = document.querySelector(".temp");
 const locationField = document.querySelector(".time_location p");
 const dateField = document.querySelector(".time_location span");
 const weatherField = document.querySelector(".condition p");
-const searchField = document.querySelector("search_area");
+const searchField = document.querySelector(".search_area");
 const form = document.querySelector("form");
 
 let target = 'Lucknow';
