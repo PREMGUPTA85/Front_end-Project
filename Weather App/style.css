@@ -45,5 +45,12 @@ nav{
 }
 
 nav form button {
-    
+    background-color: white;
+    margin-top: 1rem;
+    border: none;
+    color: grey;
+    font-size: 0.9rem;
+    padding: 0.2rem;
+    cursor: pointer;
+
 }
