@@ -29,7 +29,12 @@ const fetchResults = async (targetLocation) => {
 }
 
 function updateDetails(temp, locationName, time, condition){
-    
+    let splitDate = time.split(' ')[0];
+
+    let splitTime = time.split(' ')[1];
+
+    let currentDay = getDayName(new Date(splitDate).getDay());
+
 
     temperatureField.innerText = temp;
     locationField.innerText = locationName;
@@ -47,3 +52,24 @@ function searchForLocation(e){
 }
 
 fetchResults(target)
+
+
+function getDayName(number){
+    switch (number) {
+        case 0: 
+            return 'Sunday'
+            case 1: 
+            return 'Monday'
+            case 2: 
+            return 'Tuesday'
+            case 3: 
+            return 'Wednesday'
+            case 4: 
+            return 'Thursday'
+            case 5: 
+            return 'Friday'
+            case 6: 
+            return 'Saturday'
+
+    }
+}
