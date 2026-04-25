@@ -1,19 +1,22 @@
 * {
     margin: 0%;
     padding: 0%;
+
 }
 
 .container {
     width: 100%;
-    /* vh --> view height */
     height: 100vh; 
-    background-color: skyblue;
+    background-color: rgb(98, 211, 255);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .weather_container{
+    border: 4px dotted ghostwhite;
+    padding: 2rem;
+    margin: 2rem ;
     color: white;
 }
 
@@ -31,7 +34,7 @@
 }
 
 nav{
-    height: 100px;
+    height: 100px;/
 }
 
 .search_area {
@@ -52,5 +55,4 @@ nav form button {
     font-size: 0.9rem;
     padding: 0.2rem;
     cursor: pointer;
-
 }
