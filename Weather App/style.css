@@ -7,7 +7,7 @@
 .container {
     width: 100%;
     height: 100vh; 
-    background-color: rgb(98, 211, 255);
+    background-color: skyblue;
     display: flex;
     justify-content: center;
     align-items: center;
