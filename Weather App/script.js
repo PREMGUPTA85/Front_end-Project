@@ -69,7 +69,7 @@ function updateDetails(temp, locationName, time, condition){
     // date ko day number me convert kiya (0-6) aur uska naam nikala
 
     temperatureField.innerText = temp;
-    // temperature ko HTML me show kiya
+    // temperature ko HTML me show kiya 
 
     locationField.innerText = locationName;
     // location naam show kiya
